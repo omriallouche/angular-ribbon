@@ -1,0 +1,52 @@
+.ribbon-wrapper-right {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3.5em;
+    height: 3.5em;
+}
+
+*[ribbon] {
+    position: relative;
+}
+.ribbon-right {
+    font: normal 11px Sans-Serif;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: .5em 0;
+    right: 0;
+    top: 4px;
+    width: 8.5em;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+
+    background-color: #ea181e;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ea181e), to(#ea181e));
+    background-image: -webkit-linear-gradient(top, #ea181e, #ea181e);
+    background-image: -moz-linear-gradient(top, #ea181e, #ea181e);
+    background-image: -ms-linear-gradient(top, #ea181e, #ea181e);
+    background-image: -o-linear-gradient(top, #ea181e, #ea181e);
+    color: #fff;
+}
+
+.ribbon-right:before, .ribbon-right:after {
+    content: "";
+    border-top: 3px solid #ea181e;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    bottom: -3px;
+}
+.ribbon-right:before {
+left: 0;
+}
+.ribbon-right:after {
+right: 0;
+}

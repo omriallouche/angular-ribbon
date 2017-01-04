@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="ribbonApp" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ribbon directive</title>
+
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="src/style.css" rel="stylesheet">
+
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    </head>
+    <body ng-controller="basicController">
+        <div class="container">
+            <h1>Button Ribbon Angular Directive</h1>
+            <p>A simple directive displaying a ribbon on a button's side.</p>
+            <p>Can accept any text and be easily styled with a different color, font size etc.</p>
+            <p>Fork me on <a href="">github</a>!</p>
+
+            <p>
+            <h3>Demo</h3>
+            <a href="#" ng-center-anchor="true"
+               ribbon="Pro"
+               style="padding: 5px 50px; line-height: 50px;"
+               class="btn btn-primary btn-lg">
+                    Click me
+            </a>
+            </p>
+        </div>
+		<script src="src/script.js"></script>
+    </body>
+</html>
